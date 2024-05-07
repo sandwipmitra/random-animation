@@ -1,0 +1,63 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  width: 100vw;
+  color: white;
+  background-color: #191919;
+
+}
+
+.title-block {
+  height: 100vh;
+  
+  /* if their is only one item  */
+  /* display: flex; */ 
+  /* align-items: center;
+  justify-content: center; */
+  
+  gap: 16px;
+  display: grid;
+  text-align: center;
+  place-content: center;
+
+}
+
+#title {
+  background-image: linear-gradient(92deg, #792309, #e4ca15);
+  background-clip: text;
+  color: transparent;
+}
+
+h1 {
+  font-size: 4rem;
+  animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+
+  }
+}
+
+#author {
+  font-size: 2rem;
+  font-weight: 600;
+}
